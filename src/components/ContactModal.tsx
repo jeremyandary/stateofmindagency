@@ -84,16 +84,23 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-      <div className="relative w-full max-w-2xl bg-zinc-900 rounded-lg shadow-2xl border border-[#fd8471]/20">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm overflow-y-auto"
+      onClick={onClose}
+    >
+      <div
+        className="relative w-full max-w-2xl max-h-[calc(100vh-2rem)] overflow-y-auto bg-zinc-900 rounded-lg shadow-2xl border border-[#fd8471]/20 my-auto"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-[#f9f4ef]/60 hover:text-[#f9f4ef] transition-colors"
+          className="absolute top-4 right-4 z-10 text-[#f9f4ef]/60 hover:text-[#f9f4ef] transition-colors p-2"
+          aria-label="Close"
         >
           <X className="w-6 h-6" />
         </button>
 
-        <div className="p-8">
+        <div className="p-6 md:p-8">
           <h2 className="text-3xl md:text-4xl font-bold text-[#f9f4ef] mb-2">Start a Project</h2>
           <p className="text-[#f9f4ef]/60 mb-8">Tell me about your vision and let's create something amazing together.</p>
 
