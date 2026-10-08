@@ -125,7 +125,7 @@ export default function Hero() {
             <a href="#capabilities" className="transition-opacity hover:opacity-60">Capabilities</a>
           </nav>
 
-          <a href="#contact" className="group flex items-center gap-2 transition-opacity hover:opacity-60">
+          <a href="#contact" className="group flex items-center gap-2 transition-opacity hover:opacity-60 text-[#fd8471]">
             Let's talk
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
           </a>
