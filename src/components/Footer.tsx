@@ -7,6 +7,8 @@ export default function Footer() {
         <img
           src="/SOM_Brain_Alpha.png"
           alt="State of Mind"
+          loading="lazy"
+          decoding="async"
           className="w-24 h-24 mx-auto mb-4"
         />
         <div className="flex flex-wrap justify-center gap-8 mb-8 text-sm">

@@ -62,6 +62,8 @@ export default function FeaturedWork() {
                 {project.videoUrl && (project.isFrameIo || project.isYouTube) ? (
                   <iframe
                     src={project.videoUrl}
+                    title={`${project.title} preview`}
+                    loading="lazy"
                     className="absolute inset-0 w-full h-full object-cover pointer-events-none"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
@@ -117,6 +119,7 @@ export default function FeaturedWork() {
             {selectedProject.videoUrl && (selectedProject.isFrameIo || selectedProject.isYouTube) ? (
               <iframe
                 src={selectedProject.videoUrl}
+                title={selectedProject.title}
                 className="w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen

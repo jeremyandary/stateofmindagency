@@ -48,6 +48,10 @@ export default function About() {
                     <img
                       src={member.image}
                       alt={member.name}
+                      width={720}
+                      height={900}
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                     />
                   ) : (
