@@ -52,11 +52,11 @@ export default function Capabilities() {
               >
                 <div className="flex items-center gap-4 mb-6">
                   {index === 0 ? (
-                    <img src="/Wave_03.png" alt="" className="h-14 w-full object-cover" />
+                    <img src="/Wave_03.png" alt="" loading="lazy" decoding="async" className="h-14 w-full object-cover" />
                   ) : index === 1 ? (
-                    <img src="/Wave_01 copy.png" alt="" className="h-14 w-full object-cover" />
+                    <img src="/Wave_01 copy.png" alt="" loading="lazy" decoding="async" className="h-14 w-full object-cover" />
                   ) : index === 2 ? (
-                    <img src="/Wave_02.png" alt="" className="h-14 w-full object-contain" />
+                    <img src="/Wave_02.png" alt="" loading="lazy" decoding="async" className="h-14 w-full object-contain" />
                   ) : (
                     <>
                       <div className="inline-flex items-center justify-center w-14 h-14 bg-white/10 text-[#f9f4ef] group-hover:bg-[#fd8471] group-hover:text-black transition-all duration-300 rounded-xl">

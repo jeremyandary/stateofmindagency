@@ -38,6 +38,8 @@ export default function Clients() {
                 <img
                   src={client.logo}
                   alt={client.name}
+                  loading="lazy"
+                  decoding="async"
                   className={`h-8 md:h-10 max-w-full object-contain opacity-50 hover:opacity-100 transition-opacity duration-400 grayscale hover:grayscale-0 ${client.logoClass ?? 'w-[96px]'}`}
                 />
               ) : (
