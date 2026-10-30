@@ -2,13 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title: keep the one you already wrote if you prefer it -->
+    <title>State of Mind | Creative Agency &amp; Video Production</title>
+
+    <!-- The sentence Google shows under your title in search results -->
+    <meta name="description" content="State of Mind is one team for brand strategy, creative direction, commercials, brand films and monthly content, so you stop juggling agencies, freelancers and production companies." />
+
+    <!-- Tells Google which address is the "real" one (stateofmindpro.com redirects here) -->
+    <link rel="canonical" href="https://www.stateofmindpro.com/" />
+
+    <!-- Browser-tab and home-screen icons (replaces the Vite lightning bolt) -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#0a0a0a" />
+
+    <!-- Link preview card for LinkedIn, Facebook, iMessage, Slack (replaces Bolt's image) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="State of Mind" />
+    <meta property="og:title" content="State of Mind | Exceptional creative, radically easier" />
+    <meta property="og:description" content="Strategy, creative, production and post under one roof." />
+    <meta property="og:url" content="https://www.stateofmindpro.com/" />
+    <meta property="og:image" content="https://www.stateofmindpro.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="State of Mind logo" />
+
+    <!-- Same card for X/Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="State of Mind | Exceptional creative, radically easier" />
+    <meta name="twitter:description" content="Strategy, creative, production and post under one roof." />
+    <meta name="twitter:image" content="https://www.stateofmindpro.com/og-image.jpg" />
+
+    <!-- Structured data: tells Google who you are, separate from the song/film "State of Mind".
+         When you have social profiles, add them as:
+         "sameAs": ["https://www.linkedin.com/company/...", "https://www.instagram.com/...", "https://vimeo.com/..."] -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "State of Mind",
+      "alternateName": "State of Mind Productions",
+      "url": "https://www.stateofmindpro.com/",
+      "logo": "https://www.stateofmindpro.com/SOM_Brain_Alpha.png",
+      "image": "https://www.stateofmindpro.com/og-image.jpg",
+      "description": "Creative agency and video production company: brand strategy, creative direction, commercials, brand films, social campaigns and monthly content.",
+      "founder": [
+        { "@type": "Person", "name": "Jeremy Andary", "jobTitle": "Chief Production Officer" },
+        { "@type": "Person", "name": "Vincent Recchia", "jobTitle": "Chief Client Officer" },
+        { "@type": "Person", "name": "Richard Pouncy Jr.", "jobTitle": "Chief Creative Director" }
+      ],
+      "knowsAbout": ["Brand Strategy", "Creative Direction", "Commercials", "Brand Films", "Social Campaigns", "Motion Design", "Video Editing"]
+    }
+    </script>
+
+    <!-- Keep these two lines exactly as they are in your current file -->
     <link rel="stylesheet" href="https://use.typekit.net/hlm5nfw.css">
-    <title>State of Mind | Creative Agency & Video Production</title>
-    <meta property="og:image" content="https://bolt.new/static/og_default.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+    <!-- (Bolt adds the /assets/index-....js and .css lines itself when it builds; leave them alone) -->
 </head>
   <body>
     <div id="root"></div>
