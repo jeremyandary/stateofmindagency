@@ -94,7 +94,7 @@ export default function AramarkCaseStudy() {
               <div className="grid gap-6 sm:grid-cols-2">
                 {results.map((result) => (
                   <div key={result.stat} className="p-6 md:p-8 bg-white/5 border border-white/10 rounded-3xl">
-                    <p className="text-4xl md:text-5xl font-extrabold text-[#fd8471] mb-2">{result.stat}</p>
+                    <p className="text-4xl md:text-5xl font-bold text-[#fd8471] mb-2">{result.stat}</p>
                     <p className="text-sm md:text-base text-[#f9f4ef]/60">{result.label}</p>
                   </div>
                 ))}
