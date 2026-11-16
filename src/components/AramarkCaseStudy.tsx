@@ -69,16 +69,16 @@ export default function AramarkCaseStudy() {
 
   return (
     <>
-      <section id="aramark" ref={elementRef} className="py-24 md:py-40 px-6 bg-black">
+      <section id="aramark" ref={elementRef} className="pt-12 pb-24 md:pt-20 md:pb-40 px-6 bg-black">
         <div className="max-w-7xl mx-auto">
           <div className={`mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="flex items-center gap-4 mb-6">
               <span className="h-px w-12 bg-[#fd8471]/40"></span>
               <span className="text-xs uppercase tracking-[0.4em] text-[#fd8471] font-semibold">Case Study</span>
             </div>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-[#f9f4ef]" style={{ letterSpacing: '0.5px' }}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-[#f9f4ef]" style={{ letterSpacing: '0.5px' }}>
               WHQ Farmers Market
-            </h2>
+            </h1>
             <p className="text-base md:text-xl text-[#f9f4ef]/60 font-light">Aramark × Ford World Headquarters</p>
           </div>
 

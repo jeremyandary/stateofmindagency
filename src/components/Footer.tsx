@@ -13,7 +13,7 @@ export default function Footer() {
         />
         <div className="flex flex-wrap justify-center gap-8 mb-8 text-sm">
           <a
-            href="#about"
+            href="/#about"
             className="text-[#f9f4ef]/50 hover:text-[#fd8471] transition-colors duration-300"
           >
             About

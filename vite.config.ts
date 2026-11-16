@@ -7,4 +7,13 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+  build: {
+    rollupOptions: {
+      // Each HTML file here becomes its own page in the built site
+      input: {
+        main: 'index.html',
+        aramark: 'work/aramark-ford-farmers-market/index.html',
+      },
+    },
+  },
 });
