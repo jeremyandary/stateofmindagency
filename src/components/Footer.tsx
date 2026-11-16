@@ -4,13 +4,19 @@ export default function Footer() {
   return (
     <footer className="py-16 md:py-20 px-6 bg-black border-t border-[#fd8471]/20">
       <div className="max-w-4xl mx-auto text-center">
-        <img
-          src="/SOM_Brain_Alpha.png"
-          alt="State of Mind"
-          loading="lazy"
-          decoding="async"
-          className="w-24 h-24 mx-auto mb-4"
-        />
+        <picture>
+          {/* Visitors who turn on "reduce motion" get the still skull */}
+          <source srcSet="/som-skull-still.webp" media="(prefers-reduced-motion: reduce)" />
+          <img
+            src="/som-skull-bounce.webp"
+            alt="State of Mind"
+            width={240}
+            height={357}
+            loading="lazy"
+            decoding="async"
+            className="w-24 h-auto mx-auto mb-4"
+          />
+        </picture>
         <div className="flex flex-wrap justify-center gap-8 mb-8 text-sm">
           <a
             href="/#about"
