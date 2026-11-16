@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import MissionVision from './components/MissionVision';
 import FeaturedWork from './components/FeaturedWork';
+import AramarkCaseStudy from './components/AramarkCaseStudy';
 import About from './components/About';
 import Clients from './components/Clients';
 import Philosophy from './components/Philosophy';
@@ -14,6 +15,7 @@ function App() {
       <Hero />
       <MissionVision />
       <FeaturedWork />
+      <AramarkCaseStudy />
       <About />
       <Clients />
       <Philosophy />
