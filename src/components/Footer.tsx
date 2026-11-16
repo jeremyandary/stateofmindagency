@@ -1,3 +1,5 @@
+import { Linkedin } from 'lucide-react';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -17,7 +19,7 @@ export default function Footer() {
             className="w-24 h-auto mx-auto mb-4"
           />
         </picture>
-        <div className="flex flex-wrap justify-center gap-8 mb-8 text-sm">
+        <div className="flex flex-wrap items-center justify-center gap-8 mb-8 text-sm">
           <a
             href="/#about"
             className="text-[#f9f4ef]/50 hover:text-[#fd8471] transition-colors duration-300"
@@ -29,6 +31,15 @@ export default function Footer() {
             className="text-[#f9f4ef]/50 hover:text-[#fd8471] transition-colors duration-300"
           >
             Contact
+          </a>
+          <a
+            href="https://www.linkedin.com/company/stateofmindpro"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="State of Mind on LinkedIn"
+            className="text-[#f9f4ef]/50 hover:text-[#fd8471] transition-colors duration-300"
+          >
+            <Linkedin className="h-4 w-4" />
           </a>
         </div>
 
