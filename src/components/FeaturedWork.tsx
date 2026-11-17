@@ -49,6 +49,38 @@ export default function FeaturedWork() {
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-extrabold mb-6 text-[#f9f4ef]" style={{ letterSpacing: '0.5px' }}>Featured Work</h2>
           </div>
 
+          <a
+            href="/work/aramark-ford-farmers-market/"
+            className="group mb-10 md:mb-14 grid overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition-colors duration-300 hover:border-[#fd8471]/40 md:grid-cols-2"
+          >
+            <div className="overflow-hidden">
+              <img
+                src="/work/aramark/flyer-mockup.jpg"
+                alt="WHQ Farmers Market flyer designed for Aramark"
+                width={2000}
+                height={1333}
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
+            <div className="flex flex-col justify-center p-8 md:p-12">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="h-px w-12 bg-[#fd8471]/40"></span>
+                <span className="text-xs uppercase tracking-[0.4em] text-[#fd8471] font-semibold">Case Study</span>
+              </div>
+              <h3 className="text-2xl md:text-4xl font-extrabold text-[#f9f4ef] mb-2">WHQ Farmers Market</h3>
+              <p className="text-sm md:text-base text-[#f9f4ef]/60 mb-6">Aramark × Ford World Headquarters</p>
+              <p className="text-base md:text-lg font-light text-[#f9f4ef]/80 mb-8">
+                Event logo, flyers and branded totes, cups and stickers. All 100 free totes were gone in 20 minutes.
+              </p>
+              <span className="inline-flex items-center gap-2 text-sm text-[#fd8471]">
+                Read the case study
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </span>
+            </div>
+          </a>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {projects.map((project, index) => (
               <div
@@ -101,38 +133,6 @@ export default function FeaturedWork() {
               </div>
             ))}
           </div>
-
-          <a
-            href="/work/aramark-ford-farmers-market/"
-            className="group mt-10 md:mt-14 grid overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition-colors duration-300 hover:border-[#fd8471]/40 md:grid-cols-2"
-          >
-            <div className="overflow-hidden">
-              <img
-                src="/work/aramark/flyer-mockup.jpg"
-                alt="WHQ Farmers Market flyer designed for Aramark"
-                width={2000}
-                height={1333}
-                loading="lazy"
-                decoding="async"
-                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
-            <div className="flex flex-col justify-center p-8 md:p-12">
-              <div className="flex items-center gap-4 mb-4">
-                <span className="h-px w-12 bg-[#fd8471]/40"></span>
-                <span className="text-xs uppercase tracking-[0.4em] text-[#fd8471] font-semibold">Case Study</span>
-              </div>
-              <h3 className="text-2xl md:text-4xl font-extrabold text-[#f9f4ef] mb-2">WHQ Farmers Market</h3>
-              <p className="text-sm md:text-base text-[#f9f4ef]/60 mb-6">Aramark × Ford World Headquarters</p>
-              <p className="text-base md:text-lg font-light text-[#f9f4ef]/80 mb-8">
-                Event logo, flyers and branded totes, cups and stickers. All 100 free totes were gone in 20 minutes.
-              </p>
-              <span className="inline-flex items-center gap-2 text-sm text-[#fd8471]">
-                Read the case study
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </span>
-            </div>
-          </a>
         </div>
       </section>
 
